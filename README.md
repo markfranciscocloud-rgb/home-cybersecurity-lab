@@ -22,12 +22,12 @@ Status: In progress
 
 | System | Purpose | Status |
 |---|---|---|
-| Linux VM | Command line, networking, security tools | Planned |
-| Windows VM | Windows administration and endpoint practice | Planned |
-| Vulnerable VM | Safe target for scanning and testing | Planned |
-| Windows Server VM | Active Directory and user/group management | Future |
+| Linux VM | Command line, networking, security tools | Evidence |
+| Windows VM | Windows administration and endpoint practice | Evidence |
+| Vulnerable VM | Safe target for scanning and testing | Evidence |
+| Windows Server VM | Active Directory and user/group management | Evidence |
 
-## Tools I Plan to Use
+## Tools I Use
 
 - VirtualBox or VMware
 - Ubuntu Linux
