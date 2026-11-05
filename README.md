@@ -2,61 +2,54 @@
 
 ## Purpose
 
-This repository documents my home cybersecurity lab as I build practical skills in networking, Linux, Windows administration, vulnerability scanning, incident response, and security analysis.
+This repository documents my home cybersecurity lab as I build practical skills in networking, Linux, Windows administration, and security analysis.
 
-## Current Lab Status
+## Current progress
 
-Version: 1.0  
-Status: In progress
+Updated November 5, 2026. This is a learning portfolio; planned tools and labs are not completed experience.
 
-## Lab Goals
-
-- Build a safe local environment for cybersecurity practice
-- Practice Linux and Windows administration
-- Learn basic networking and packet flow
-- Run vulnerability scans against authorized lab machines
-- Document findings in a professional format
-- Build portfolio evidence for internships and entry-level IT/cybersecurity roles
-
-## Planned Lab Environment
-
-| System | Purpose | Status |
+| Week | Lab | Status |
 |---|---|---|
-| Linux VM | Command line, networking, security tools | Evidence |
-| Windows VM | Windows administration and endpoint practice | Evidence |
-| Vulnerable VM | Safe target for scanning and testing | Evidence |
-| Windows Server VM | Active Directory and user/group management | Evidence |
+| 1 | [Windows, Linux, and VirtualBox inventory](01-lab-setup/README.md) | Ubuntu setup recorded; inventory evidence and remaining checks identified |
+| 2 | [LAB-002: Pi-hole DNS filtering](02-networking-notes/LAB-002-pihole-dns-filtering.md) | Allowed and blocked DNS responses and Query Log visually verified |
+| Next | [Windows Server and Active Directory](05-active-directory/README.md) | Planned |
+| Future | [Vulnerability scanning](03-vulnerability-scanning/README.md) | Objective recorded; no scan results supplied |
+| Future | [Incident response](04-incident-response/README.md) | Planned |
 
-## Tools I Use
+## Repository map
 
-- VirtualBox or VMware
-- Ubuntu Linux
-- Windows
-- Kali Linux
-- Nmap
-- Wireshark
-- Nessus Essentials or OpenVAS
-- PowerShell
-- Bash
+- `01-lab-setup/`: inventory and setup notes.
+- `02-networking-notes/`: DNS lab, validation evidence, and troubleshooting.
+- `03-vulnerability-scanning/`: original objective and future validation plan.
+- `04-incident-response/`: planned log investigation.
+- `05-active-directory/`: next lab and completion criteria.
+- `screenshots/`: evidence index and screenshot handling.
+- `archive/original/`: unchanged copies of every original file, including the earlier README.
+- [Original Ubuntu setup](ubuntu-vm-setup.md): retained at its existing URL.
 
-## Skills Practiced
+## Environment and demonstrated skills
 
-- Virtualization
-- Basic networking
-- Linux commands
-- Windows administration
-- Vulnerability scanning
-- Log review
-- Incident response documentation
-- Technical writing
+Windows is the DNS test client; Ubuntu runs Pi-hole inside Oracle VirtualBox. A Host-Only connection carries test queries, with a separate NAT adapter for guest outbound access. See the [inventory](01-lab-setup/README.md) for the evidence level of each configuration detail.
 
-## Rules of Engagement
+Demonstrated: DNS validation, blocklist inspection, application log review, Windows/Linux command use, and virtualization documentation. The earlier lab record also describes resolver troubleshooting; its exact configuration diff is unavailable.
 
-All scanning and testing will be performed only on systems I own or have explicit permission to test. This lab is for legal, ethical, educational use only.
+Kali Linux, a separate Windows client VM, vulnerable targets, Nmap scan results, Wireshark captures, Nessus/OpenVAS, and Active Directory are future work unless evidence is added.
 
-## Progress Log
+## Rules of engagement
+
+All scanning and testing will be performed only on systems I own or have explicit permission to test. This lab is for legal, ethical, educational use only. Do not expose a recursive DNS service or lab administration interface to the Internet.
+
+## Progress log
 
 ### 2026-04-28
+- Created GitHub repository and started documentation (original recorded date).
 
-- Created GitHub repository
-- Started documentation for home cybersecurity lab
+### 2026-11-05
+- Organized existing files into navigable directories while preserving all original content.
+- Documented Week 1 inventory with source qualifications.
+- Verified Week 2 screenshots showing allowed and blocked DNS requests and matching Pi-hole logs.
+- Defined [next labs](05-active-directory/README.md).
+
+## Evidence and publication
+
+The [evidence index](screenshots/README.md) distinguishes direct screenshot review, historical records, and pending checks. No credentials, resolver configuration secrets, or unrelated browsing logs are included. Public examples use `<PIHOLE_HOST_ONLY_IP>` and `<WINDOWS_HOST_ONLY_IP>`; substitute your own lab addresses. Private lab addresses are not credentials.
