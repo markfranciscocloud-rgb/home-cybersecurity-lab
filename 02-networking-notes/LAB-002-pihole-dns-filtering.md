@@ -1,6 +1,6 @@
 # Week 2 — LAB-002: Pi-hole DNS filtering
 
-**Lab record date:** November 5, 2026  
+**Lab record date:** November 5, 2026
 **Status:** Functional DNS filtering verified from supplied screenshots; no live retest performed during this repository update.
 
 ## Objective

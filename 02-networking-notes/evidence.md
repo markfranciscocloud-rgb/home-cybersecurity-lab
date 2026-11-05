@@ -4,14 +4,14 @@ Reviewed November 5, 2026 from attachments recovered from the Projects chat. Ori
 
 ## E1 — Windows DNS responses
 
-Source: image(20261105-174438).png  
+Source: image(20261105-174438).png
 SHA-256: `F5C82F8865EA2D8123CDD3A95D1BD26B6FAFDF54984CF224EECFFD4644AE550E`
 
 PowerShell shows explicit nslookup requests to the same Pi-hole server. doubleclick.net returns `::` and `0.0.0.0`. example.com returns two IPv6 and two IPv4 answers. The server is identified as pi.hole. Lab addresses are represented by role aliases in the report.
 
 ## E2 — Pi-hole Query Log
 
-Source: image(20261105-174618).png  
+Source: image(20261105-174618).png
 SHA-256: `B4F7DA8A9C786D96684F77CA0156C30CBBD4167CEB9C01AD451DE7AA9D46B0C2`
 
 | Displayed timestamp | Domain | Type | Observed handling |
